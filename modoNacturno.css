@@ -1,0 +1,57 @@
+body.dark{
+    background-image: url(./fondo1.png);  
+
+}
+
+
+nav{
+    display: flex;
+    justify-content: end;
+    border-radius: 5px;
+    transition: .3s ease all;
+}
+
+.switch{
+    transition: 3s; 
+    background: #343d53;
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+}
+
+.switch::after{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: #fff;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 100px;
+    transition: .3s ease all;
+    box-shadow: 0px 0px 2px 2px black;
+}
+
+.switch.active{
+    background: orange;
+    color: black;
+}
+
+.switch.active::after{
+    right: 0;
+    left: unset;
+}
+
+.span{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    background: none;
+    color: #fff;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script  src =" https://kit.fontawesome.com/2c36e9b7b1.js " origen cruzado =" anónimo "> </script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./reloj.css">
+    <link rel="stylesheet" href="modoNacturno.css">
+
+    <title>DALMASSO-HNOS</title>
+</head>
+<body>
+          <!-- switch -->
+    <nav>
+      <button class="switch" id="switch">
+        <span class="span"><i class="fas fa-sun"></i></span>
+        <span class="span"><i class="fa  fa-moon"></i></span>
+      </button>
+    </nav>
+
+    <!-- switch -->
+
+    <div id="dPrincipal" class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <h2><span><img src="./Marisa-100x100.jpg" alt=""></span>MARISA DALMASSO</h2>
+          </div>
+        </div>
+        <div id="inputs" class="row col-11 col-sm-6">
+          <div class="col-12">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" rows="6" cols="50" placeholder="Mensaje">Su maquina esta lista !!!!</textarea>      
+          </div>
+          <div class="col-12">
+            <div class="col-3" style="float:left">
+              <label for="country">Pais</label>
+              <select name="country" id="country">
+                <option value="54" default>Argentina</option>
+              </select>
+            </div>
+            <div class="col-9" style="float:right">
+              <label for="number">Telefono</label>
+              <input type="number" name="number" id="number" min="0" placeholder="Introduce Numero Telefonico" />
+            </div>
+      
+          </div>
+          <br>
+          <div class="col-12">
+            <div class="col-sm-6" style="float:left">
+              <button id="send_message" class="button button1" style="width:100%">Enviar Mensaje</button>
+            </div>
+            
+            
+            
+            <!-- <div class="col-sm-6" style="float:left">
+              <button class="button button3" id="ubicacion" style="width:100%">ubicacion</button>
+            </div> -->
+          
+          </div>
+        </div>
+      </div>
+
+      	
+
+    <!-- Radio Fm -->
+        
+	<div class="radio">
+		<audio id="stream" controls="" preload="none"="width:="" 800px;"="">
+			<source src="https://liveradio.mediainbox.net/fmcordoba.mp3" type="audio/mpeg">
+		</audio>
+	</div>
+    <!-- Radio Fm -->
+	
+		<!-- Reloj -->
+        <div class="wrap">
+            <div class="widget">
+               <div class="fecha">
+                   <p id="diaSemana" class="diaSemana"></p>
+                   <p id="dia" class="dia"></p>
+                   <p>de </p>
+                   <p id="mes" class="mes"></p>
+                   <p>del </p>
+                   <p id="year" class="year"></p>
+               </div>
+               <div class="reloj">
+                   <span id="horas" class="horas"></span>
+                   <span>:</span>
+                   <span id="minutos" class="minutos"></span>
+                   <span>:</span>
+                   <span id="segundos" class="segundos"></span>
+               </div>
+           </div>
+       </div>
+    <!-- Reloj -->
+     
+     
+    
+    <script src="./index.js"></script>
+    <script src="./reloj.js"></script> 
+    <script src="./modoNocturno.js"></script>
+</body>
+</html>

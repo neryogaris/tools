@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2? family= Bebas+Neue & display=swap');
+/*--------------*/
+
+
+.wrap {
+  width: 98%;
+ 
+  position: absolute;  
+}
+
+.widget {
+
+	margin-top: 14px;
+}
+
+.widget p {
+	display: inline; 
+  position: relative;
+}
+
+.fecha {
+	font-family: 'Google Sans', sans-serif;
+	text-align: end;
+	font-size: 1em;
+	width: 57%; 
+    color: rgb(255, 255, 255);
+}
+
+.reloj {
+	font-family: 'Bebas Neue', cursive;
+	text-align: center;
+	font-size: 2.5em;
+	width: 100%;
+    color: rgb(255, 255, 255);
+}
+
